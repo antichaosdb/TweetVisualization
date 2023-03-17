@@ -1,0 +1,23 @@
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+        <title>Tweet Visualizations</title>
+        <script async type="text/javascript" src="bundle.js"></script>
+    </head>
+    <body>
+        <p>Sentiment Distribution for Top referenced 
+            <select id="entityType" name="entityType">
+                <option selected>Organization</option>
+                <option>Person</option>
+                <option>Quantity</option>
+                <option>URL</option>
+                <option>Location</option>
+                <option>Other</option>
+            </select>
+        </p>
+        <div id="chart1" style="width: 800px; height: 600px"></div>
+        <h2>Entities by Sentiment and Count</h2>
+        <div id="chart2" style="width: 800px; height: 600px"></div>
+    </body>
+</html>
