@@ -21,8 +21,6 @@ import {
     ENumericFormat,
 } from 'scichart';
 
-SciChartSurface.useWasmFromCDN();
-
 // To deploy this, set your runtime key here 
 //SciChartSurface.setRuntimeLicenseKey("");
 
@@ -95,7 +93,6 @@ export const drawExample = async () => {
     }
     await setData(EEntityType.Organization);
     (document.querySelector("#entityType") as HTMLSelectElement).onchange = (ev: Event) => {
-        console.log(ev);
         // @ts-ignore
         setData(ev.target.value);
     }
